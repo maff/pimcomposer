@@ -7,7 +7,7 @@ Installation
 ------------
 
 1. Install the plugin
-2. Follow the composer/composer installation instructions to install libraries into /vendor
+2. Follow the [composer/composer](http://github.com/composer/composer) installation instructions to install libraries into /vendor
 3. Develop using the newly installed libraries
 
 Example
@@ -15,32 +15,32 @@ Example
 
 We want to use Symfony's console component. First, create a `composer.json` file specifying the dependency.
 
-    ``` json
-    {
-        "require": {
-            "symfony/console": "*"
-        }
+``` json
+{
+    "require": {
+        "symfony/console": "*"
     }
-    ```
+}
+```
 
 Install composer if you don't have done so yet.
 
-    ``` sh
-    $ curl -s https://getcomposer.org/installer | php
-    ```
+``` sh
+$ curl -s https://getcomposer.org/installer | php
+```
 
 Use composer to install the needed component(s) into `/vendor` and create an autoloader file we can use later.
 
-    ``` sh
-    $ php composer.phar install
-    ```
+``` sh
+$ php composer.phar install
+```
 
 Use the library in your project.
 
-    ``` php
-    <?php
-    class ExampleCommand extends Symfony\Component\Console\Command\Command
-    {
-        // do fancy stuff here
-    }
-    ```
+``` php
+<?php
+class ExampleCommand extends Symfony\Component\Console\Command\Command
+{
+    // do fancy stuff here
+}
+```
