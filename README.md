@@ -9,6 +9,7 @@ Installation
 1. Install the plugin
 2. Follow the [composer/composer](http://github.com/composer/composer) installation instructions to install libraries into /vendor
 3. Develop using the newly installed libraries
+4. If you are using a SCM system (e.g. git, svn) on your project you'll probably want to ignore/exclude the `/vendor` directory
 
 Example
 -------
